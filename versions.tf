@@ -11,5 +11,5 @@ terraform {
 
 provider "aws" {
   region  = "ap-southeast-1"
-  profile = "creditculturedev"
+  profile = var.aws_profile
 }
