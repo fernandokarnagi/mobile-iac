@@ -5,3 +5,7 @@ module "jenkins" {
 module "cicd" {
   source = "./cicd"
 }
+
+module "ecr" {
+  source = "./ecr"
+}

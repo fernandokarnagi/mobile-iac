@@ -19,3 +19,14 @@ resource "aws_codecommit_repository" "codecommit-repository-mobiledevops-ios" {
     Owner = "MobileDevOps"
   }
 }
+
+resource "aws_codecommit_repository" "codecommit-repository-mobiledevops-docker" {
+  repository_name = var.codecommit_docker
+  description     = "${var.codecommit_docker} repository."
+  default_branch  = var.codecommit_default_branch
+
+  tags = {
+    Name  = "codecommit-repository-mobiledevops-docker"
+    Owner = "MobileDevOps"
+  }
+}
